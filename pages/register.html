@@ -29,8 +29,9 @@ function register() {
     fetch("https://canary-crock-frisbee.ngrok-free.dev/register", {
         method: "POST",
         headers: {
-            "Content-Type": "application/json"
-        },
+            "Content-Type": "application/json",
+            "ngrok-skip-browser-warning": "true"
+        }.
         body: JSON.stringify({ name, email, password, role })
     })
     .then(res => res.text())
