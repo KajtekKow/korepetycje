@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.main {
+    flex: 1;
+    padding: 40px;
+}
+
+.section {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    width: 300px;
+    background: #020617;
+    padding: 20px;
+    border-left: 1px solid #1e293b;
+    position: relative;
+    overflow: visible; /* 👈 DODAJ TO */
+}
+
+.panel {
+    display: block;
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.link-panel {
+    text-decoration: none;
+    color: white;
+}
+
+.link-panel:hover {
+    background: #334155;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.layout {
+    display: flex;
+}
+
+.contact-box {
+    background: #2563eb;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.contact-box:hover {
+    background: #1d4ed8;
+    transform: scale(1.02);
+}
+
+#profileBox {
+    position: relative;
+}
+
+#profileActions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #1e293b;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    display: none;
+    z-index: 999; /* 👈 TO JEST KLUCZ */
+}
+
+#profileBox:hover #profileActions,
+#profileActions:hover {
+    display: block;
+}
+
+#profileActions button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+    background: #2563eb;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#profileActions {
+    display: none;
+}
